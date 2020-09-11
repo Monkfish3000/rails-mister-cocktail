@@ -1,23 +1,20 @@
-  <div class="banner">
-
+<div class="banner">
+  <div class="container">
     <h1>Cocktails</h1>
-      <p>The cause of and the solution to all of life's problems. </p>
+    <p>The cause of and the solution to all of life's problems.</p>
   </div>
+</div>
 
 <div class="container">
+  <div class="card-grid mt-3">
 
-
-  <div>
-    <ul>
       <% @cocktails.each do |cocktail| %>
-          <li class="card-category"> <%= link_to cocktail.name, cocktail_path(cocktail) %> </li>
+         <div class="card-category">
+            <%= link_to cocktail.name, cocktail_path(cocktail) %>
+         </div>
       <% end %>
-    </ul>
+
   </div>
-
-
- <%= link_to "Add a new cocktail", new_cocktail_path, class: 'btn btn-primary' %>
-
-
+  <%= link_to "Add a new cocktail", new_cocktail_path, class: 'btn btn-pink' %>
 </div>
 

@@ -1,14 +1,15 @@
 .banner {
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
   padding: 150px 0;
   background-image: url('https://i.pinimg.com/originals/3b/e5/b9/3be5b9001f53425a768e4fd5908ed202.jpg');
-
+  background-color: black;
 }
 
 .banner h1 {
   margin: 0;
-  color: white;
+  color: pink;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
   font-weight: bold;
@@ -18,6 +19,6 @@
 .banner p {
   font-size: 20px;
   color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+
+
 }
